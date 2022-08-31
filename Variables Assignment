@@ -1,0 +1,27 @@
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string name = "John";
+      string lastName = "Dover";
+      Console.WriteLine(name +" "+ lastName);  
+      int x = 160, y = 92;
+      x = 2090;
+      Console.WriteLine(name +" "+ x);
+      Char charOne = 'B';
+      Char charTwo = 'Z';
+      Console.WriteLine(lastName +" "+ charTwo);
+      double myDouble = 12.87;
+      float myFloat = 333.879F;
+      Console.WriteLine(charOne +" "+ myDouble +" "+ myFloat +" "+ y);
+      bool doorOpen = true;
+      bool doorLocked = false;
+      Console.WriteLine("Is the door open? " + doorOpen);
+      Console.WriteLine("Is the door locked? " + doorLocked);
+     }
+  }
+}

@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemySpawnManager : MonoBehaviour
+{
+    public GameObject[] enemyPrefabs;
+    private float spawnRangeX;
+    private float spawnPosZ;
+
+    private float startDelay = 2f;
+    private float spawnInterval = 2f;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        InvokeRepeating("SpawnRandomEnemies", startDelay, spawnInterval);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void SpawnRandomEnemy()
+    {
+        //genereate a position to spawn enemies
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX),0, spawnPosZ);
+        //pick random enemy from prefabs
+        int enemyIndex = Random.Range(0,enemyPrefabs.Length);
+        //spawn the enemy indexed from array
+        Instantiate(enemyPrefabs[enemyIndex], spawnPos, enemyPrefabs[enemyIndex].transform.rotation);
+    }
+}

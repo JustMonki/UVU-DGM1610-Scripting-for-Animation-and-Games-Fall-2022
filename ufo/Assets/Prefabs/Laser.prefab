@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5400368958121375838}
   - component: {fileID: -6078889328961014944}
   - component: {fileID: 7631964585696759214}
+  - component: {fileID: -3606371647694261721}
+  - component: {fileID: 1211680283269913372}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -31,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 5400368958121375839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.65, y: 12.424503, z: 1.4735988}
-  m_LocalScale: {x: 0.063912936, y: 0.017480101, z: 0.6419456}
+  m_LocalScale: {x: 0.098930575, y: 0.017480101, z: 0.62372965}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -144,3 +146,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3606371647694261721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5400368958121375839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017884827a5182342be155af5216250d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &1211680283269913372
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5400368958121375839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.38
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

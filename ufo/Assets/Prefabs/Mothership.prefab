@@ -307,6 +307,8 @@ GameObject:
   - component: {fileID: 786124106402712055}
   - component: {fileID: 786124106402712052}
   - component: {fileID: 8632948621457118731}
+  - component: {fileID: 3416520945735338323}
+  - component: {fileID: 7862202082790836826}
   m_Layer: 0
   m_Name: Mothership
   m_TagString: Untagged
@@ -428,6 +430,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3416520945735338323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786124106402712053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017884827a5182342be155af5216250d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreManager: {fileID: 0}
+  scoreToGive: 20
+--- !u!114 &7862202082790836826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786124106402712053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1385ae28e8381b4a9dd37c4d086a278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upperBound: 20
+  lowerBound: -10
 --- !u!1 &786124106448063617
 GameObject:
   m_ObjectHideFlags: 0

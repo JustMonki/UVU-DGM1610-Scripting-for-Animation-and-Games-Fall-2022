@@ -111,6 +111,8 @@ GameObject:
   - component: {fileID: 8164847495850704776}
   - component: {fileID: 8164847495850704779}
   - component: {fileID: 2110907162}
+  - component: {fileID: 348075954089593495}
+  - component: {fileID: 2100220027076478614}
   m_Layer: 0
   m_Name: Invader
   m_TagString: Untagged
@@ -193,7 +195,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8164847495850704778}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -227,6 +229,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &348075954089593495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164847495850704778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017884827a5182342be155af5216250d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreManager: {fileID: 0}
+  scoreToGive: 10
+--- !u!114 &2100220027076478614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164847495850704778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1385ae28e8381b4a9dd37c4d086a278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upperBound: 20
+  lowerBound: -7
 --- !u!1 &8164847496357495439
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,6 @@ public class EnemySpawnManager : MonoBehaviour
     private float spawnRangeX = 14f;
     [SerializeField]
     private float spawnPosZ;
-
     private float startDelay = 2f;
     private float spawnInterval = 2f;
 

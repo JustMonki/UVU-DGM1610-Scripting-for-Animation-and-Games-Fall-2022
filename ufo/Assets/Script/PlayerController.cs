@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public GameObject Laser;
     public Transform blaster;
+    private AudioSource blasterAudio;
+    public AudioClip lasterBlast;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        blasterAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,10 +38,9 @@ public class PlayerController : MonoBehaviour
        }
 
         if(Input.GetKeyDown(KeyCode.Space))
-        {
+        {   
+            blasterAudio.PlayOneShot(lasterBlast,1.0f);
             Instantiate(Laser, blaster.transform.position, Laser.transform.rotation);
-            
         }
     }
-
 }

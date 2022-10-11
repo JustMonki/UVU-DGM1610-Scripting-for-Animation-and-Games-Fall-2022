@@ -7,6 +7,7 @@ public class DetectCollision : MonoBehaviour
 
     public ScoreManager ScoreManager;
     public int scoreToGive;
+    public ParticleSystem explosionParticle;
 
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class DetectCollision : MonoBehaviour
  
     void OnTriggerEnter(Collider other)
     {
+        explosionParticle.Play();
         ScoreManager.IncreaseScore(scoreToGive); //increase score by scoretogive value
         Destroy(gameObject);
         Destroy(other.gameObject);

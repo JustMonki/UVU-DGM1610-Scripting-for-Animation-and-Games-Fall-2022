@@ -444,6 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreManager: {fileID: 0}
   scoreToGive: 20
+  explosionParticle: {fileID: 7445369111586948529, guid: 18bcbc84e6be5eb429d9758220ef70d6, type: 3}
 --- !u!114 &7862202082790836826
 MonoBehaviour:
   m_ObjectHideFlags: 0

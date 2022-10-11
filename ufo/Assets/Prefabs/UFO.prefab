@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657ebb266fdabf439f396a54fa17132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: -1
+  Speed: -5
 --- !u!54 &1964341597
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreManager: {fileID: 0}
   scoreToGive: 30
+  explosionParticle: {fileID: 7445369111586948529, guid: 18bcbc84e6be5eb429d9758220ef70d6, type: 3}
 --- !u!114 &9191565514124173800
 MonoBehaviour:
   m_ObjectHideFlags: 0

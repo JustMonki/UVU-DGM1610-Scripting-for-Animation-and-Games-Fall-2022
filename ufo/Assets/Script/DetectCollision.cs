@@ -5,9 +5,9 @@ using UnityEngine;
 public class DetectCollision : MonoBehaviour
 {
 
-    public ScoreManager ScoreManager;
+    public ScoreManager ScoreManager; // variable to reference score manager
     public int scoreToGive;
-    public ParticleSystem explosionParticle;
+    public ParticleSystem explosionParticle; //store particles
 
 
     // Start is called before the first frame update
@@ -19,9 +19,15 @@ public class DetectCollision : MonoBehaviour
  
     void OnTriggerEnter(Collider other)
     {
-        explosionParticle.Play();
+        Explision();
+        explosionParticle.transform.parent = null;
         ScoreManager.IncreaseScore(scoreToGive); //increase score by scoretogive value
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        Destroy(gameObject); // destroy other game object it hits
+        Destroy(other.gameObject); //destory this game oboject
+    }
+
+    public void Explision()
+    {
+        Instantiate(explosionParticle, transform.position, transform.rotation);
     }
 }

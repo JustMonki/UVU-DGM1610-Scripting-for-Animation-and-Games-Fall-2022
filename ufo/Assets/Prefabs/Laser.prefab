@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 5400368958121375837}
   - component: {fileID: 5400368958121375838}
   - component: {fileID: -6078889328961014944}
-  - component: {fileID: 7631964585696759214}
   - component: {fileID: -3606371647694261721}
-  - component: {fileID: 1211680283269913372}
+  - component: {fileID: 7755259906978155707}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -130,22 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperBound: 10
   lowerBound: -10
---- !u!54 &7631964585696759214
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400368958121375839}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &-3606371647694261721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +144,7 @@ MonoBehaviour:
   ScoreManager: {fileID: 0}
   scoreToGive: 0
   explosionParticle: {fileID: 0}
---- !u!136 &1211680283269913372
+--- !u!136 &7755259906978155707
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,7 +154,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.38
-  m_Height: 2
+  m_Radius: 0.55
+  m_Height: 1.01
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}

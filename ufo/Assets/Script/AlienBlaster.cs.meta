@@ -3,7 +3,10 @@ guid: 413baa83abac5844abfd61e5c10f57d2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Laser: {instanceID: 0}
+  - alienBlaster: {instanceID: 0}
+  - lasterBlast: {fileID: 8300000, guid: b1e0a0865b96d9641b495fb1314c7ecb, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

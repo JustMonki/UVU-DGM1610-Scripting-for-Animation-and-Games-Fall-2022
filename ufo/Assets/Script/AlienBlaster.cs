@@ -9,10 +9,13 @@ public class AlienBlaster : MonoBehaviour
     public Transform alienBlaster;
     public float startDelay = 3f;
     public float spawnInterval = 1.6f;
+    private AudioSource EnemyAudio;
+    public AudioClip EnemyBlast;
 
     // Start is called before the first frame update
     void Start()
     {
+        EnemyAudio = GetComponent<AudioSource>();
         InvokeRepeating("AlienShoot", startDelay, spawnInterval);
     }
 
@@ -23,7 +26,8 @@ public class AlienBlaster : MonoBehaviour
     }
 
     void AlienShoot()
-    {
+    {   
+        EnemyAudio.PlayOneShot(EnemyBlast,1.0f);
         Instantiate(Laser, alienBlaster.transform.position , Laser.transform.rotation);
     }
 }

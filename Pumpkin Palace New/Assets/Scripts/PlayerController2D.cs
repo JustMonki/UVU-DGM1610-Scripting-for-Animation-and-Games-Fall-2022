@@ -11,7 +11,7 @@ public class PlayerController2D : MonoBehaviour
 
     //player rigidbody
     private Rigidbody2D rb;
-    private bool isFacingRight = true;
+    public bool isFacingRight = true;
 
     //player jump
     private bool isGrounded = true;
@@ -25,6 +25,7 @@ public class PlayerController2D : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        GetComponent<Collider2D>();
     }
 
     // Update is called once  per set amount of frames
@@ -68,8 +69,6 @@ public class PlayerController2D : MonoBehaviour
     void FlipPlayer()
     {
         isFacingRight = !isFacingRight;
-        Vector3 scaler = transform.localScale;//local variable that stores localscale value
-        scaler.x *= -1; //flip the sprite
-        transform.localScale = scaler;
+        transform.Rotate(0f, 180f, 0f);
     }
 }

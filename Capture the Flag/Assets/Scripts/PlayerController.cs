@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
         Move();
         CameraLook();
 
-        /* if(Input.GetButton("Fire1"))
+        /* if(Input.GetButton("Fire"))
         {
             if(weapon.CanShoot())
               weapon.Shoot();

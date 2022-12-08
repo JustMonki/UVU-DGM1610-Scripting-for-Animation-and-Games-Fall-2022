@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         //weapon = GetComponent<Weapon>();
+        curHp = maxHp;
     }
 
     void Start()
@@ -52,6 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         //GameManager.instance.LoseGame();
         Debug.Log("die");
+        Time.timeScale = 0;
     }
 
     public void GiveHealth(int amountToGive)
